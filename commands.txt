@@ -1,0 +1,47 @@
+Filename: name of the file (.py, .txt etc)
+Projectname: name of the project/directory
+
+
+Initialize directory with Git (make directory work with git)
+- git init
+
+Add file to git repository (only needs to be done when file is created)
+- git add *filename*
+
+Commit changes to a file to GitHub
+- git commit -a -m *message describing commit*
+
+Sync local directory with GitHub
+- *create a GitHub repo with name *projectname**
+- git remote add origin git@github.com:SiddharthRajaraman/*projectname*.git
+- git push -u origin master (*after this step, in order to push to gitHub only "git push" is required*)
+
+Differences between current version and most recent commit
+- git diff
+
+Differences between current version and specific commit
+- git diff *commitid*
+
+Differences between current version and another branch
+- git diff *branchname*
+
+Clone repository
+- git clone git@github.com:username/projectname.git
+
+Pull changes from GitHub repo
+- git pull
+
+Create branch
+- git checkout -b *branchname*
+
+Link Branch to GitHub
+- git push -u origin feature
+
+Merge branch into master branch
+- git checkout master
+- git merge *branchname*
+- git push
+
+Delete branch
+- git branch -d *branchname* (deletes from directory)
+- git push origin -delete *branchname* (delete from github)
